@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <inchar.h>
 #include <time.h>
 #include <fstream>
 
@@ -34,11 +33,9 @@ int main()
 	std::cout<<"Save to file? Y/N\n";
 	std::cin.ignore();
 	
-    char lol=getch();//char lol=getchar(); //cout<<"test"; system("pause");
+    char lol=getchar();
 	lol=tolower(lol);
 	if(lol=='y') zapisz(rnd);
-    
-    std::cout<<"Press any key to exit\n";
-	getch();
+	
     return 0;
 }
